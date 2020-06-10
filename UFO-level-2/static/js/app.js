@@ -5,7 +5,11 @@ var tableData = data;
 var inputField = d3.selectAll("input.form-control");
 var button = d3.select("button#filter-btn");
 var form = d3.select("form");
+var advbtn = d3.select("button#adv-search");
 
+var advInputs = d3.selectAll("li.adv-search-input")
+
+var showAdvInputs = false
 
 function runFilter() {
     d3.event.preventDefault();
@@ -13,7 +17,6 @@ function runFilter() {
     var filteredTable = tableData;
     if (d3.select("input#datetime").property("value") !== "") {
         let inputDate = d3.select("input#datetime").property("value");
-        console.log(`So you wanna find out about ${inputDate}?`);
         var filteredTable = filteredTable.filter(sighting => sighting.datetime === inputDate);
     };
     if (d3.select("input#city").property("value") !== "") {
@@ -48,6 +51,20 @@ function runFilter() {
     };
 };
 
+function advInput () {
+     advInputs.each(function (_){
+         d3.select(this).classed("adv-search-input",showAdvInputs)
+        });
+        if (showAdvInputs){
+            advbtn.text("Advanced Search");
+        }
+        else {
+            advbtn.text("Reduced Search")
+        }
+        showAdvInputs = !showAdvInputs;
+};
+
 inputField.on("change", runFilter);
 button.on("click", runFilter);
 form.on("submit", runFilter);
+advbtn.on("click", advInput);
