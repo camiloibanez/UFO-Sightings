@@ -59,8 +59,8 @@ function advInput () {
             advbtn.text("Advanced Search");
         }
         else {
-            advbtn.text("Reduced Search")
-        }
+            advbtn.text("Reduced Search");
+        };
         showAdvInputs = !showAdvInputs;
 };
 
