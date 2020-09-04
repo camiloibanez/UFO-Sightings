@@ -1,0 +1,15 @@
+body {
+    margin: 0;
+}
+
+.body {
+    background-image: url('../images/180608-aliens-fermi-paradox-ac-515p_3ed014cab156ff9319f4d52ee5242b89.nbcnews-fp-1200-630.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 900px;
+    width: 100%;
+}
+
+.header {
+    margin-top: 0px;
+}
