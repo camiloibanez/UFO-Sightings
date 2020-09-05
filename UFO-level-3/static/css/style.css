@@ -27,6 +27,11 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.title {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .menu-option {
     display: inline-block;
     padding-left: 60px;
@@ -34,5 +39,21 @@ body {
     font-size: 1.5rem;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
+}
 
+.button {
+    background-color: #B7D5D4;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    transition-duration: 0.4s;
+}
+
+.button:hover {
+    background-color: #77878B;
 }
