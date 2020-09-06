@@ -143,6 +143,9 @@ td {
     border-top: 1px solid #B7D5D4;
 }
 
+.table-block {
+    min-height: 870px;
+}
 .footer {
     background-color: #373E40;
     height: 44px;
