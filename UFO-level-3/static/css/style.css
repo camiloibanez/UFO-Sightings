@@ -54,6 +54,7 @@ body {
 
 label {
     display: block;
+    color: white;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -104,7 +105,12 @@ table {
 
 th {
     text-align: center;
+    color: white;
     min-width: 70px;
+}
+
+td {
+    color: white;
 }
 
 .footer {

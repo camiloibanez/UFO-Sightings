@@ -5,7 +5,6 @@ var tableData = data;
 var inputField = d3.selectAll("input");
 
 function runFilter() {
-    d3.event.preventDefault();
 
     var filteredTable = tableData;
     if (d3.select("input#date-input").property("value") !== "") {
@@ -45,3 +44,5 @@ function runFilter() {
 };
 
 inputField.on("change", runFilter);
+
+runFilter();
