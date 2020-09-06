@@ -53,6 +53,15 @@ body {
 .input-block {
     display: inline-block;
 }
+
+label {
+    display: block;
+}
+
+.input {
+    display: block;
+}
+
 .titles {
     margin-top: 280px;
     margin-left: 270px;
