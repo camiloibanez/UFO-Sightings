@@ -1,17 +1,12 @@
 body {
     margin: 0;
+    background-color: #488286;
 }
 
 .body {
     background-image: url('../images/180608-aliens-fermi-paradox-ac-515p_3ed014cab156ff9319f4d52ee5242b89.nbcnews-fp-1200-630.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 870px;
-    width: 100%;
-}
-
-.body2 {
-    background-color: #488286;
     height: 870px;
     width: 100%;
 }
@@ -59,10 +54,12 @@ body {
 
 label {
     display: block;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .input {
     display: block;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .titles {
@@ -102,10 +99,12 @@ table {
     margin-left: auto;
     margin-right: auto;
     margin-top: 55px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 th {
     text-align: center;
+    min-width: 70px;
 }
 
 .footer {
