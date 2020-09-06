@@ -100,17 +100,47 @@ table {
     margin-left: auto;
     margin-right: auto;
     margin-top: 55px;
+    margin-bottom: 20px;
     font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+}
+
+thead {
+    display: table-header-group;
+    vertical-align: middle;
 }
 
 th {
+    display: table-cell;
     text-align: center;
     color: white;
+    font-weight: bold;
     min-width: 70px;
+    vertical-align: bottom;
+    padding: .75rem;
+    border-top: 1px solid #B7D5D4;
+    border-bottom: 2px solid #B7D5D4;
+}
+
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+}
+
+tr {
+    display: table-row;
+}
+
+tbody tr:nth-of-type(odd) {
+    background-color: #305252;
 }
 
 td {
+    display: table-cell;
     color: white;
+    padding: .75rem;
+    vertical-align: top;
+    border-top: 1px solid #B7D5D4;
 }
 
 .footer {
